@@ -92,8 +92,8 @@
 
 .hero-container {
     position: relative;
-    width: 320px;  /* fixed size */
-    height: 320px; /* fixed size */
+    width: 320px;  
+    height: 320px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,12 +245,15 @@ color: rgba(0, 255, 136, 1);
   border-radius: 16px;
   padding:20px;
   gap: 30px;
+  text-align: left;
+  margin: 10px;
+ 
 }
 .card h3{
     font-size: 1.5rem;
     font-weight: 700;
     color:#FFFFFF;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 .card p{
     font-size: 1.25rem;
@@ -261,7 +264,7 @@ color: rgba(0, 255, 136, 1);
   width: 36px;
   height: 36px;
   object-fit: contain;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .card-tall{
@@ -385,12 +388,12 @@ color: rgba(0, 255, 136, 1);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    height: 100%;
     min-height: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: none;
 }
 .footer-content{
     display: flex;
@@ -472,4 +475,100 @@ color: rgba(0, 255, 136, 1);
     transform: translate(-50%, -50%) translateY(0) scale(1) rotate(10deg);
   }
 }  
+
+/*Responsive Part*/
+@media screen and (max-width: 576px) {
+
+ 
+  .top-section{
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .container,
+  .btn{
+    display: none;
+  }
+  
+
+  .title{
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .hero-bio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .stats{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .box-1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .section-title{
+    font-size:1.75rem;
+
+  }
+  .episode-grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 10px;
+    gap: 10px;
+  }
+  .host-card{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+  .name{
+    text-align: center;
+  }
+  .socials{
+    justify-content: center;
+  }
+ 
+  .footer{
+  min-height: auto;  
+  background-size: cover;
+  background-position: center;
+}
+
+  .footer-part{
+    font-size: 3.2rem;
+    transform: none;
+   text-align: center;
+   margin-bottom: 15px;
+  }
+
+  .footer-links{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2px;
+  }
+
+  .footer-links span{
+    justify-content: center;
+    line-height: 1;
+    font-size: 1rem;
+  }
+
+  .footer-copy{
+    margin-top: 28px;
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+}
+
+  
+  
+
+  
 
